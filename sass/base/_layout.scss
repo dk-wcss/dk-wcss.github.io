@@ -1,40 +1,17 @@
-$default_main_width: 75%;
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url("{{ root_url }}/fonts/Lato-Light.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../source/fonts/Lato-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: url("{{ root_url }}/fonts/Lato-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url("{{ root_url }}/fonts/Lato-Italic.woff") format("woff");
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 700;
-  src: url("{{ root_url }}/fonts/Lato-BoldItalic.woff") format("woff");
-}
-
+$default_main_width: 70%;
+$sidebar_width: 20%;
 
 @mixin blue-background {
   background-color: $header-bg;
   color: #FFF;
+}
+
+@mixin image {
+  width: 238px;
+  height: 238px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }
 
 body {
@@ -47,7 +24,6 @@ body {
 }
 
 #header-content > ul.main-navigation {
-  height: 100%;
   list-style-type: none;
   display: table;
   height: 100%;
@@ -55,9 +31,14 @@ body {
   li {
     display: table-cell;
     vertical-align: middle;
-    font-family: Lato;
+    @include font-menu;
     &:not(:last-child) {
       padding-right: 40px;
+      @media screen and (max-width: 1366px) {
+        & {
+          padding-right: 0px;
+        }
+      }
     }
     span {
       width: 100%;
@@ -72,4 +53,269 @@ body {
 .main-navigation li a {
   color: white;
   text-decoration: none;
+}
+
+#main {
+  width: $default_main_width;
+  @media screen and (max-width: 1366px) {
+    & {
+        width: 90%;
+      }}
+  margin: 0 auto;
+  position: relative;
+}
+
+#main_full {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+aside.sidebar {
+  width: $sidebar_width;
+  min-width: 120px;
+  height: auto;
+  float: left;
+  overflow: visible;
+  padding-top: 60px;
+}
+
+#content {
+  width: 100% - $sidebar_width;
+  height: auto;
+  float: left;
+  overflow: visible;
+  padding-top: 60px;
+}
+
+#content_full {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  @media screen and (max-width: 1366px) {
+    & {
+        width: 90%;
+      }}
+  height: auto;
+  overflow: visible;
+  padding-top: 60px;
+}
+
+article header h1.entry-title {
+  margin-bottom: 30px;
+}
+
+div.entry-content {
+  max-width: 80%;
+  line-height: 1.8;
+  margin-top: 5px;
+}
+
+article footer {
+  margin-top: -10px;
+  float: right;
+}
+
+.entry-content {
+  margin-bottom: 80px;
+}
+
+aside {
+  ul li {
+    margin-bottom: 1em;
+  }
+  ul li:hover {
+    background-image: url(../images/pointer.png);
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 15px;
+  }
+}
+
+.row_1 {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.row_2 {
+  @media screen and (max-width: 862px) {
+    & {
+      top: 50px;
+      padding-bottom: 0;
+      }
+  }
+  position: relative;
+  top: 192px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 192px;
+}
+
+.column {
+  @media screen and (max-width: 862px) {
+    & {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+  }
+  display: inline-block;
+  width: 33%;
+  overflow: visible;
+  vertical-align: top;
+  height: auto;
+  clear: both;
+}
+
+.column .column_content_left {
+  @media screen and (max-width: 862px) {
+    & {
+        width: 100%;
+        float: none;
+      }
+  }
+  position: relative;
+  width: 75%;
+  float: left;
+  height: auto;
+}
+
+.column .column_content_middle {
+  @media screen and (max-width: 862px) {
+    & {
+        width: 100%;
+        float: none;
+      }
+  }
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+}
+
+.column .column_content_right {
+  @media screen and (max-width: 862px) {
+    & {
+        width: 100%;
+        float: none;
+      }
+  }
+  position: relative;
+  width: 75%;
+  float: right;
+  height: auto;
+}
+
+.column_image {
+  @media screen and (max-width: 862px) {
+    & {
+        float: none;
+      }
+  }
+  width: auto;
+  min-height: 285px;
+  float: left;
+}
+
+.row_about_1 {
+  position: relative;
+  top: 30px;
+  width: 90%;
+  height: auto;
+}
+
+.row_about_2 {
+  position: relative;
+  top: 130px;
+  width: 90%;
+  height: auto;
+}
+
+.row_about_3 {
+  position: relative;
+  top: 280px;
+  width: 90%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.column .image_person_1 {
+  @include image;
+  background: url(../images/person_1.jpg) no-repeat;
+  background-position: center;
+}
+
+.column .image_person_2 {
+  @include image;
+  background: url(../images/person_2.jpg) no-repeat;
+  background-position: center;
+}
+
+.column .image_person_3 {
+  @include image;
+  background: url(../images/person_3.jpg) no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: relative;
+  top: 0px;
+  width: 238px;
+  height: 238px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background-color: $header_bg;
+  opacity: 0.6;
+}
+
+.person_contact {
+  visibility: hidden;
+}
+
+.person_container {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+div[class^="image_person"]:hover > .overlay {
+  opacity: 0;
+}
+
+div[class^="image_person"]:hover ~ .person_container{
+  padding-left: 15px;
+  border-left: 1px solid #000000;
+}
+
+div[class^="image_person"]:hover ~ .person_container .person_contact {
+  visibility: initial;
+}
+
+#separator {
+  clear: both;
+}
+
+#separator {
+  position: relative;
+  top: 180px;
+}
+
+#separator h1 {
+  font-family: Lato;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+#separator .bottom_line {
+  display: inline-block;
+  width: 92%;
+  height: 2px;
+  float: right;
+  background-color: #000000;
+  margin-top: 18px;
 }

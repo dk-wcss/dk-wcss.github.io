@@ -1,4 +1,4 @@
-body > header {
+body > #header-main {
     width: 100%;
     height: 100px;
     @include blue-background;
@@ -6,6 +6,10 @@ body > header {
     #header-content {
         position: relative;
         width: $default_main_width;
+        @media screen and (max-width: 1366px) {
+        & {
+            width: 90%;
+          }}
         height: 100%;
         margin: 0 auto;
     }

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "test"
-date: 2015-08-27 09:59:55 +0200
+title: "Testowy post na temat bezpieczenstwa 2."
+date: 2015-08-28 14:02:05 +0200
 comments: true
 categories:
 ---

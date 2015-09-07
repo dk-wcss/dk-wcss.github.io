@@ -3,15 +3,8 @@
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
   <header id="header-main" role="banner">{% include custom/header.html %}
   </header>
-  <div id="main">
-  <aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-  </aside>
-    <div id="content">
+  <div id="main_full">
+    <div id="content_full">
       {{ content | expand_urls: root_url }}
     </div>
   </div>
