@@ -4,7 +4,7 @@
   <title><![CDATA[wcss]]></title>
   <link href="http://dk-wcss.github.io/atom.xml" rel="self"/>
   <link href="http://dk-wcss.github.io/"/>
-  <updated>2015-08-28T13:32:10+02:00</updated>
+  <updated>2015-09-07T15:15:31+02:00</updated>
   <id>http://dk-wcss.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,11 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Testowy Post Na Temat Bezpieczenstwa 2.]]></title>
+    <link href="http://dk-wcss.github.io/blog/2015/08/28/testowy-post-na-temat-bezpieczenstwa-2/"/>
+    <updated>2015-08-28T14:02:05+02:00</updated>
+    <id>http://dk-wcss.github.io/blog/2015/08/28/testowy-post-na-temat-bezpieczenstwa-2</id>
+    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate pellentesque lacinia. Mauris congue malesuada purus sed tristique. Sed ultrices turpis lacus, vitae tempus nunc blandit ut. Aliquam ac magna ac lorem porttitor placerat a id purus. Cras dictum sollicitudin risus, nec euismod augue dapibus in. Nulla enim metus, sagittis at risus rhoncus, malesuada aliquam nibh. Etiam porttitor elementum massa, et convallis ipsum. Nulla iaculis magna eu dui hendrerit, a eleifend ante congue. Maecenas bibendum tempor dui, non tristique diam posuere nec. Curabitur dictum urna eget ex elementum, eget condimentum enim commodo. Sed metus odio, eleifend nec laoreet non, vehicula vitae est.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Testowy Post Na Temat Bezpieczenstwa.]]></title>
+    <link href="http://dk-wcss.github.io/blog/2015/08/28/testowy-post-na-temat-bezpieczenstwa/"/>
+    <updated>2015-08-28T13:58:20+02:00</updated>
+    <id>http://dk-wcss.github.io/blog/2015/08/28/testowy-post-na-temat-bezpieczenstwa</id>
+    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate pellentesque lacinia. Mauris congue malesuada purus sed tristique. Sed ultrices turpis lacus, vitae tempus nunc blandit ut. Aliquam ac magna ac lorem porttitor placerat a id purus. Cras dictum sollicitudin risus, nec euismod augue dapibus in. Nulla enim metus, sagittis at risus rhoncus, malesuada aliquam nibh. Etiam porttitor elementum massa, et convallis ipsum. Nulla iaculis magna eu dui hendrerit, a eleifend ante congue. Maecenas bibendum tempor dui, non tristique diam posuere nec. Curabitur dictum urna eget ex elementum, eget condimentum enim commodo. Sed metus odio, eleifend nec laoreet non, vehicula vitae est.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Test]]></title>
     <link href="http://dk-wcss.github.io/blog/2015/08/27/test/"/>
     <updated>2015-08-27T09:59:55+02:00</updated>
     <id>http://dk-wcss.github.io/blog/2015/08/27/test</id>
-    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate pellentesque lacinia. Mauris congue malesuada purus sed tristique. Sed ultrices turpis lacus, vitae tempus nunc blandit ut. Aliquam ac magna ac lorem porttitor placerat a id purus. Cras dictum sollicitudin risus, nec euismod augue dapibus in. Nulla enim metus, sagittis at risus rhoncus, malesuada aliquam nibh. Etiam porttitor elementum massa, et convallis ipsum. Nulla iaculis magna eu dui hendrerit, a eleifend ante congue. Maecenas bibendum tempor dui, non tristique diam posuere nec. Curabitur dictum urna eget ex elementum, eget condimentum enim commodo. Sed metus odio, eleifend nec laoreet non, vehicula vitae est. Aliquam mauris lacus, finibus at nisl a, faucibus mollis libero. Duis feugiat id sem ut molestie.</p>
+    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate pellentesque lacinia. Mauris congue malesuada purus sed tristique. Sed ultrices turpis lacus, vitae tempus nunc blandit ut. Aliquam ac magna ac lorem porttitor placerat a id purus. Cras dictum sollicitudin risus, nec euismod augue dapibus in. Nulla enim metus, sagittis at risus rhoncus, malesuada aliquam nibh. Etiam porttitor elementum massa, et convallis ipsum. Nulla iaculis magna eu dui hendrerit, a eleifend ante congue. Maecenas bibendum tempor dui, non tristique diam posuere nec. Curabitur dictum urna eget ex elementum, eget condimentum enim commodo. Sed metus odio, eleifend nec laoreet non, vehicula vitae est.</p>
 ]]></content>
   </entry>
   
